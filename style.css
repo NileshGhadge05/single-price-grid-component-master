@@ -1,0 +1,160 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(179, 62%, 40%);
+  --light-cyan: hsl(179, 62%, 45%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --dark-yellow: hsl(71, 73%, 48%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --paddingX: 2.5rem;
+  --paddingY: 1.5rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.3;
+  background-color: var(--light-gray);
+  color: var(--grayish-blue);
+  padding: 4rem var(--paddingX);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.price {
+  border-radius: .3rem;
+  overflow: hidden;
+  max-width: 40rem;
+  margin: auto;
+  box-shadow: 0 1.3px 3.1px -21px rgba(0, 0, 0, 0.059),
+  0 3.2px 8.6px -21px rgba(0, 0, 0, 0.085),
+  0 6.2px 20.8px -21px rgba(0, 0, 0, 0.111),
+  0 12px 69px -21px rgba(0, 0, 0, 0.17);
+
+
+}
+
+@media only screen and (min-width: 48em) {
+  .price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .community {
+    grid-column: 1 / 3;
+  }
+}
+
+.price > * {
+  padding: var(--paddingY) var(--paddingX);
+}
+
+.community {
+  background-color: var(--white);
+  padding-top: 3rem;
+}
+
+.community h2 {
+  color: var(--cyan);
+}
+
+.community h3 {
+  font-size: 1rem;
+  color: var(--bright-yellow);
+}
+
+.community p {
+  font-size: 0.85rem;
+  color: var(--grayish-blue);
+  margin-bottom: 0.5rem;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  color: var(--light-gray);
+}
+
+.subscription__price {
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  font-weight: 700;  
+}
+
+.subscription__price span {
+  font-size: 1rem;
+  margin-left: .8rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.subscription p {
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
+.subscription a {
+  display: block;
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  font-weight: 700;
+  padding: .9rem;
+  text-align: center;
+  margin-top: 1.8rem;
+  border-radius: .3rem;
+  box-shadow: 0 10px 12px 5px rgba(0, 0, 0, 0.14), 0 2px 12px 1px rgba(0, 0, 0, 0.22);
+  transition: background-color 250ms linear;
+}
+
+.subscription a:hover {
+  background-color: var(--dark-yellow);
+}
+
+.whyus {
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
+}
+
+.whyus h2 {
+  font-size: 1rem;
+}
+
+.whyus ul {
+  font-size: 0.85rem;
+  margin-bottom: 1.8rem;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.attribution{
+  font-size: 12px;
+  color: black;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: brown;
+}
