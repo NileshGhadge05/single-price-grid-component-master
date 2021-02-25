@@ -1,4 +1,4 @@
-# Frontend Mentor Challenge - Single Price Grid Component
+<h2>Frontend Mentor Challenge - Single Price Grid Component</h2>
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
